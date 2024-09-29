@@ -4,6 +4,7 @@ import axios from "axios";
 import { FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 import { PiBuildingsFill } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 const GitHubSearch = () => {
   const [username, setUsername] = useState("");
   const [profile, setProfile] = useState("");
@@ -65,12 +66,14 @@ const GitHubSearch = () => {
 
                     <div className='profile-info'>
                         <p className='profile-location'><FaMapMarkerAlt/> {profile.location}</p>
+                        
                        
                     </div>
 
                     <div className='profile-links'>
                         <a href={`https://twitter.com/${profile.twitter_username}`} target='_blank' rel="noreferrer" className='twitter-link'><FaXTwitter/>{profile.twitter_username}</a>
                         <a href={profile.html_url} target='_blank' rel="noreferrer" className='profile-url'><FaGithub/>View Profile</a>
+                        
                     </div>
                 </div>
             </div>
