@@ -24,7 +24,7 @@ const GitHubSearch = () => {
   };
   return (
     <div className="main-container">
-      <h1 className="main-heading">GitHub Profile Search</h1>
+      <h1 className="main-heading">GitHub Profile Fetcher</h1>
 
       <form action="" onSubmit={handleSubmit} className="search-form">
         <input
